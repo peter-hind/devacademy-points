@@ -4,7 +4,7 @@ import { TeacherData } from '../../models/teachers.ts'
 
 const router = express.Router()
 
-router.get('/teachers', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const teachers = await db.getAllTeachers()
     if (!teachers) {
