@@ -7,6 +7,7 @@ export interface CommentData {
 }
 
 export interface Comment {
+  comment_id: number
   comment_content: string
   student_name: string
   teacher_name: string
