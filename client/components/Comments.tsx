@@ -7,7 +7,6 @@ export default function Comments() {
 
   return (
     <div className="box comments">
-      <h1>Comments</h1>
       {commentData &&
         commentData.map((comment) => (
           <SingleComment
