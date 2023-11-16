@@ -14,8 +14,7 @@ function App() {
   return (
     <>
       <div className="tile-top"></div>
-      <div className="content">
-        <div className="container">
+        <div className="content">
           <Heading />
           <Form />
 
@@ -32,7 +31,6 @@ function App() {
               </div>
             ))}
         </div>
-      </div>
       <div className="tile-bottom"></div>
     </>
   )

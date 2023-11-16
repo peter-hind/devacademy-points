@@ -7,13 +7,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color:#8FD1FF;
 }
 
 p {
   font-size: 12px;
-  margin-top: 4px;
+  margin: 4px 0px 6px 0px;
 }
 
 #app {
@@ -42,19 +42,12 @@ p {
 
 .content {
   font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.container {
   font-weight: 700;
   display: flex;
   flex-direction: column;
   gap: 24px;
   width: 800px;
+  height: auto;
   text-align: center;
   justify-content: center;
 }
@@ -176,8 +169,26 @@ p {
 h3 {
   font-family: 'Silkscreen', sans-serif;
   font-weight: 400;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
 }
 
 .bold {
   font-weight: 700;
+}
+
+.sprite {
+  margin: 2px 0px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url('/images/coins.png');
+  background-size: 280px auto;
+  animation: playSprite 1s steps(14) infinite;
+}
+
+@keyframes playSprite {
+  from { background-position: 0 0; }
+  to { background-position: -280px 0; }
 }
