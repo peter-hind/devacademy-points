@@ -25,7 +25,7 @@ export default function SingleComment({
           {` awarded `}
           <span className="bold">{student_name}</span>
           {` with `}
-          {/* <img src="/images/coin.svg" alt="" /> */}
+          <div className="sprite"></div>
           {` x `}
           <span className="bold">{points}</span>
           {` points!`}

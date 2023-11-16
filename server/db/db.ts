@@ -48,3 +48,10 @@ export async function addComment(newComment: CommentData) {
 
   return db('comments').insert(addedComment)
 }
+export function getAllTeachers() {
+  return db('teachers').select()
+}
+
+export function getTeacher(id: number) {
+  return db('teachers').select().where('teacher_id', id).first()
+}
