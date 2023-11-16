@@ -16,18 +16,6 @@ function App() {
         <Heading />
         {/* <Nav /> */}
         <Outlet />
-        {/* <Form />
-        <Comments /> */}
-        {/* Pete - Iterate through profileData array and create a Profile component for each student, passing down the necessary props indicated by Katie */}
-        {/* {profileData &&
-          profileData.map((student) => (
-            <Profile
-              key={student.student_id}
-              student_name={student.student_name}
-              student_points={student.student_points}
-              student_id={student.student_id}
-            />
-          ))} */}
       </div>
       <div className="tile-bottom"></div>
     </div>
