@@ -1,24 +1,23 @@
 export async function seed(knex) {
   // Deletes ALL existing entries
-  await knex('fruit').del()
 
   // Inserts seed entries
-  await knex('fruit').insert([
-    { id: 1, name: 'Pete', points: 0 },
-    { id: 2, name: 'Courtney', points: 0 },
-    { id: 3, name: 'Teacum', points: 0 },
-    { id: 4, name: 'Katie', points: 0 },
-    { id: 5, name: 'Joana', points: 0 },
-    { id: 6, name: 'Bonnie', points: 0 },
-    { id: 7, name: 'Alex', points: 0 },
-    { id: 8, name: 'Tayne', points: 0 },
-    { id: 9, name: 'Karl', points: 0 },
-    { id: 10, name: 'Maddy', points: 0 },
-    { id: 11, name: 'Toby', points: 0 },
-    { id: 12, name: 'Sam', points: 0 },
-    { id: 13, name: 'Mike', points: 0 },
-    { id: 14, name: 'Sandra', points: 0 },
-    { id: 15, name: 'Murray', points: 0 },
-    { id: 16, name: 'Matt', points: 0 },
+  await knex('students').insert([
+    { student_id: 1, student_name: 'Pete', student_points: 0 },
+    { student_id: 2, student_name: 'Courtney', student_points: 0 },
+    { student_id: 3, student_name: 'Teancum', student_points: 0 },
+    { student_id: 4, student_name: 'Katie', student_points: 0 },
+    { student_id: 5, student_name: 'Joana', student_points: 0 },
+    { student_id: 6, student_name: 'Bonnie', student_points: 0 },
+    { student_id: 7, student_name: 'Alex', student_points: 0 },
+    { student_id: 8, student_name: 'Tayne', student_points: 0 },
+    { student_id: 9, student_name: 'Karl', student_points: 0 },
+    { student_id: 10, student_name: 'Maddy', student_points: 0 },
+    { student_id: 11, student_name: 'Toby', student_points: 0 },
+    { student_id: 12, student_name: 'Sam', student_points: 0 },
+    { student_id: 13, student_name: 'Mike', student_points: 0 },
+    { student_id: 14, student_name: 'Sandra', student_points: 0 },
+    { student_id: 15, student_name: 'Murray', student_points: 0 },
+    { student_id: 16, student_name: 'Matt', student_points: 0 },
   ])
 }
