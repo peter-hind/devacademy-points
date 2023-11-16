@@ -1,9 +1,7 @@
 export default function Heading() {
   return (
-
-      <div className="box">
-        <h1>Heading</h1>
-      </div>
-
+    <div className="box">
+      <img src="/images/dap-logo.svg" alt="Dev Academy Points Logo"className="heading"/>
+    </div>
   )
 }

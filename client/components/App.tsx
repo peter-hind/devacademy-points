@@ -29,6 +29,7 @@ function App() {
             />
           ))} */}
       </div>
+      <div className="tile-bottom"></div>
     </div>
   )
 }
