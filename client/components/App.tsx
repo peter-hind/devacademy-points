@@ -1,6 +1,7 @@
 import Heading from './Heading'
 import Comments from './Comments'
 import Form from './Form'
+import Profile from './Profile'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Heading />
         <Form />
         <Comments />
+        <Profile />
       </div>
     </div>
   )
