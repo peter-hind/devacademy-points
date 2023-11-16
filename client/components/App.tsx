@@ -5,7 +5,9 @@ import Profile from './Profile'
 
 function App() {
   return (
-    <div className="app">
+    <>
+    <div className='tile-top'></div>
+    <div className="content">
       <div className="container">
         <Heading />
         <Form />
@@ -13,6 +15,8 @@ function App() {
         <Profile />
       </div>
     </div>
+    <div className='tile-bottom'></div>
+    </>
   )
 }
 

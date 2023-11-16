@@ -1,0 +1,75 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 744 902">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-5 {
+        fill: #873835;
+      }
+
+      .cls-2 {
+        fill: #5e2725;
+      }
+
+      .cls-3 {
+        fill: #5ebdff;
+      }
+
+      .cls-4 {
+        fill: #79b346;
+      }
+
+      .cls-6 {
+        fill: #c96965;
+      }
+
+      .cls-7 {
+        fill: #9be65a;
+      }
+    </style>
+  </defs>
+  <path class="cls-3" d="m744,283H0v367h744v-367Z"/>
+  <path class="cls-3" d="m744,187H0v72h744v-72Z"/>
+  <path class="cls-3" d="m744,108H0v55h744v-55Z"/>
+  <path class="cls-3" d="m744,46H0v38h744v-38Z"/>
+  <path class="cls-3" d="m744,0H0v22h744V0Z"/>
+  <path class="cls-2" d="m719.99,870H0v32h744v-32h-24.01Z"/>
+  <path class="cls-7" d="m719.99,650H0v28h744v-28h-24.01Z"/>
+  <path class="cls-4" d="m96,678H0v48h24v24h48v-48h24v24h24v24h24v-24h48v48h24v-24h24v-24h-48v-48h-72v24h-24v-24Z"/>
+  <path class="cls-4" d="m408,726h-72v48h-24v24h48v-24h24v-24h24v-24Z"/>
+  <path class="cls-4" d="m360,702h48v24h48v-24h24v-24h-120v24Z"/>
+  <path class="cls-4" d="m720,774v24h-48v-24h48Z"/>
+  <path class="cls-4" d="m672,798v24h-24v-24h24Z"/>
+  <path class="cls-4" d="m720,798h24v24h-24v-24Z"/>
+  <path class="cls-4" d="m600,774h-24v-24h-24v24h-24v24h72v-24Z"/>
+  <path class="cls-4" d="m336,678h-120v24h48v48h48v-48h24v-24Z"/>
+  <path class="cls-4" d="m504,678h96v24h24v24h24v24h-48v-24h-24v-24h-24v24h-24v-24h-24v-24Z"/>
+  <path class="cls-4" d="m648,726v-48h24v48h-24Z"/>
+  <path class="cls-4" d="m696,678h48v72h-24v-24h-24v-48Z"/>
+  <path class="cls-6" d="m600,678h24v24h-24v-24Z"/>
+  <path class="cls-6" d="m624,702h24v24h-24v-24Z"/>
+  <path class="cls-6" d="m432,798h24v-48h-24v48Z"/>
+  <path class="cls-6" d="m432,798h-24v24h24v-24Z"/>
+  <path class="cls-6" d="m47,798h-23v-24h24v24h47v24h-48v-24Z"/>
+  <path class="cls-6" d="m95,798v-24h24v24h-24Z"/>
+  <path class="cls-6" d="m336,822h24v-24h-24v24Z"/>
+  <path class="cls-6" d="m312,822v24h24v-24h-24Z"/>
+  <path class="cls-6" d="m312,822v-24h-24v24h24Z"/>
+  <path class="cls-6" d="m480,822v-48h24v24h24v24h-48Z"/>
+  <path class="cls-6" d="m166,822h-24v24h72v-24h-24v-24h-24v24Z"/>
+  <path class="cls-6" d="m672,726h24v24h-24v-24Z"/>
+  <path class="cls-6" d="m672,750v24h-24v-24h24Z"/>
+  <path class="cls-6" d="m600,822h24v24h-24v-24Z"/>
+  <path class="cls-6" d="m624,846h24v24h-24v-24Z"/>
+  <path class="cls-6" d="m720,798v24h-48v-24h48Z"/>
+  <path class="cls-6" d="m504,702h-24v24h24v-24Z"/>
+  <path class="cls-5" d="m336,822v-24h-24v24h24Z"/>
+  <path class="cls-1" d="m120,678h-24v24h-24v48H24v-24H0v144h624v-24h24v24h96v-48h-96v-24h24v-24h48v24h24v-48h-24v-24h-24v-48h-24v48h-24v24h-48v-24h-24v-24h-24v24h-24v-24h-24v-24h-24v24h-24v24h-48v-24h-48v-24h-24v24h-24v48h-48v-48h-48v-24h-24v48h-48v24h-24v-24h-24v-24h24v-24Zm72,48h48v24h-24v24h-24v-48Zm144,96h24v-48h24v-24h24v-24h-72v48h-24v24h-24v24h24v24h24v-24Zm144-120h24v24h-24v-24Zm192,48v24h-24v-24h24Zm0,0v-24h24v24h-24Zm-48,96h-24v-24h24v24Zm-24-72h-24v-24h-24v24h-24v24h-24v-24h-24v48h48v-24h72v-24Zm-144,24h-24v-48h24v48Zm-24,0v24h-24v-24h24Zm-408,0h23v24h48v-24h24v-24h-24v24h-47v-24h-24v24Zm142,24h-24v24h72v-24h-24v-24h-24v24Z"/>
+  <path class="cls-5" d="m624,678v24h24v-24h-24Z"/>
+</svg>
