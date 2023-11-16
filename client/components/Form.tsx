@@ -1,46 +1,67 @@
-import React, { useState } from 'react';
-import Profile from './Profile';
-import SingleComment from './SingleComment';
-import { StudentData } from '../../models/profile';
-import { Comment } from '../../models/comment';
+import React, { useState } from 'react'
+import Profile from './Profile'
+import SingleComment from './SingleComment'
+import { StudentData } from '../../models/profile'
+import { Comment, CommentData } from '../../models/comment'
+import { useProfiles } from '../hooks/useProfiles'
+import { addComment } from '../apis/comments'
 
-interface FormProps {
-  student: StudentData;
-}
+// interface FormProps {
+//   student: StudentData;
+// }
 
-const Form: React.FC<FormProps> = ({ student }) => {
-  const [points, setPoints] = useState<number>(0);
-  const [comment, setComment] = useState<string>('');
+const Form: React.FC = () => {
+  const { data: profileData } = useProfiles()
+  const [points, setPoints] = useState<number>(0)
+  const [comment, setComment] = useState<string>('')
+  const [student, setStudent] = useState<string>('Pete')
 
   const handlePointsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setPoints(Number(e.target.value));
-  };
+    setPoints(Number(e.target.value))
+  }
 
   const handleCommentChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setComment(e.target.value);
-  };
+    setComment(e.target.value)
+  }
+
+  const handleStudentChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setStudent(e.target.value)
+  }
 
   const handleFormSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    const newComment: Comment = {
+    const newComment: CommentData = {
       comment_content: comment,
-      student_name: student.student_name,
-      teacher_name: 'Your Teacher', // Change this 
+      student_name: student,
+      teacher_name: 'Jatin', // Change this
       points: points,
-      comment_id: Date.now().toString(), // Generate a unique ID
-    };
+    }
 
-    
+    console.log(newComment)
 
-    setPoints(0);
-    setComment('');
-  };
+    addComment(newComment)
+
+    setPoints(0)
+    setComment('')
+    setStudent('Pete')
+  }
 
   return (
     <div>
-      <Profile {...student} />
       <form onSubmit={handleFormSubmit}>
+        <label>
+          Student:
+          <select
+            id="student-select"
+            value={student}
+            onChange={handleStudentChange}
+          >
+            {profileData?.map((pupil) => (
+              <option key={pupil.student_id}>{pupil.student_name}</option>
+            ))}
+          </select>
+        </label>
         <label>
           Points:
           <input type="number" value={points} onChange={handlePointsChange} />
@@ -53,21 +74,8 @@ const Form: React.FC<FormProps> = ({ student }) => {
         <br />
         <button type="submit">Submit</button>
       </form>
-      {points !== 0 && comment && (
-        <SingleComment
-          student_name={student.student_name}
-          teacher_name="Your Teacher"  // Change this 
-          points={points}
-          comment_content={comment}
-        />
-      )}
     </div>
-  );
-};
+  )
+}
 
-export default Form;
-
-
-
-
-
+export default Form
