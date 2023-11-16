@@ -11,6 +11,7 @@ import Nav from './Nav.tsx'
 function App() {
   //Pete - call useQuery/useProfiles hook to get all student profiles by calling API getProfiles function
   const { data: profileData } = useProfiles()
+  const { data: teacherData } = useTeachers()
   return (
     <>
       <div className="tile-top"></div>
@@ -23,5 +24,4 @@ function App() {
     </>
   )
 }
-
 export default App
