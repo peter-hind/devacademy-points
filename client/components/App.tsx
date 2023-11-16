@@ -1,15 +1,16 @@
-import { useFruits } from '../hooks/useFruits.ts'
+import Heading from './Heading'
+import Comments from './Comments'
+import Form from './Form'
 
 function App() {
-  const { data } = useFruits()
-
   return (
-    <>
-      <div className="app">
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
-        <ul>{data && data.map((fruit) => <li key={fruit}>{fruit}</li>)}</ul>
+    <div className="app">
+      <div className="container">
+        <Heading />
+        <Form />
+        <Comments />
       </div>
-    </>
+    </div>
   )
 }
 
