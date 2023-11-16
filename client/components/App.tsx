@@ -4,13 +4,17 @@ import Form from './Form'
 
 function App() {
   return (
-    <div className="app">
+    <>
+    <div className='tile-top'></div>
+    <div className="content">
       <div className="container">
         <Heading />
         <Form />
         <Comments />
       </div>
     </div>
+    <div className='tile-bottom'></div>
+    </>
   )
 }
 
