@@ -112,56 +112,69 @@ p {
   width: 12px;
 }
 
-.single-comment {
+.grid-content {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   width: auto;
   height: auto;
   background-color: #fffff9;
-  font-family: 'Silkscreen', sans-serif;
-  font-weight: 400;
+
 }
 
-.comment-1a {
+.grid-flex {
+  display: flex;
+  width: 100%
+}
+
+.comment {
+  font-family: 'Silkscreen', sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+
+.grid-1a {
   background-image: url('/images/1a.svg');
   background-size: auto;
 }
 
-.comment-1b {
+.grid-1b {
   background-image: url('/images/1b.svg');
   background-repeat: repeat-x;
   background-size: auto;
 }
 
-.comment-1c {
+.grid-1c {
   background-image: url('/images/1c.svg');
   background-size: auto;
 }
 
-.comment-2a {
+.grid-2a {
   background-image: url('/images/2a.svg');
   background-repeat: repeat-y;
   background-size: auto;
 }
 
-.comment-2c {
+.grid-2c {
   background-image: url('/images/2c.svg');
   background-repeat: repeat-y;
   background-size: auto;
 }
 
-.comment-3a {
+.grid-3a {
   background-image: url('/images/3a.svg');
   background-size: auto;
 }
 
-.comment-3b {
+.grid-3b {
   background-image: url('/images/3b.svg');
   background-repeat: repeat-x;
   background-size: auto;
 }
 
-.comment-3c {
+.grid-3c {
   background-image: url('/images/3c.svg');
   background-size: auto;
 }
@@ -192,4 +205,10 @@ h3 {
 @keyframes playSprite {
   from { background-position: 0 0; }
   to { background-position: -280px 0; }
+}
+
+.student,
+.teacher {
+  width: 48px;
+  height: 48px;
 }

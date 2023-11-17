@@ -37,4 +37,17 @@ router.get('/', async (req, res) => {
   }
 })
 
+router.post('/add', async (req, res) => {
+  try {
+    const newComment = req.body
+    const comment = await db.addComment(newComment)
+    res.json(comment)
+  } catch (err) {
+    res.status(500).json({
+      message: 'An error occurred while adding comment',
+      error: err instanceof Error ? err.message : 'Unknown error',
+    })
+  }
+})
+
 export default router
