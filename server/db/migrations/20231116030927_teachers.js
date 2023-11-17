@@ -3,6 +3,7 @@ export async function up(knex) {
     table.increments('teacher_id')
     table.string('teacher_name')
     table.string('favorite_thing')
+    table.string('teacher_picture')
   })
 }
 

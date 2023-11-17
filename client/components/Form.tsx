@@ -85,7 +85,16 @@ const Form: React.FC = () => {
   }
 
   return (
-    <div>
+
+<div className="grid-container">
+<div className="grid-1a corner"></div>
+<div className="grid-1b top"></div>
+<div className="grid-1c corner"></div>
+<div className="grid-2a left"></div>
+
+<div className="grid-content">
+  <div className='grid-flex'>
+  <div className="form">
       <form onSubmit={handleFormSubmit}>
         <label>
           Student:
@@ -99,6 +108,7 @@ const Form: React.FC = () => {
             ))}
           </select>
         </label>
+        <br />
         <label>
           Points:
           <input type="number" value={points} onChange={handlePointsChange} />
@@ -112,6 +122,16 @@ const Form: React.FC = () => {
         <button type="submit">Submit</button>
       </form>
     </div>
+  </div>
+</div>
+
+<div className="grid-2c right"></div>
+<div className="grid-3a corner"></div>
+<div className="grid-3b bottom"></div>
+<div className="grid-3c corner"></div>
+</div>
+
+
   )
 }
 

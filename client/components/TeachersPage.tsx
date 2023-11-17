@@ -6,14 +6,16 @@ import Teacher from './Teacher'
 function TeachersPage() {
   const { data: teacherData } = useTeachers()
   return (
-    <div>
+    <div className='profiles'>
       {teacherData?.map((teacher) => (
-        <Teacher
-          key={teacher.teacher_id}
-          teacher_name={teacher.teacher_name}
-          favorite_thing={teacher.favorite_thing}
-          teacher_id={teacher.teacher_id}
-        />
+        <div key={teacher.teacher_id}>
+          <Teacher
+            teacher_name={teacher.teacher_name}
+            favorite_thing={teacher.favorite_thing}
+            teacher_id={teacher.teacher_id}
+            teacher_picture={teacher.teacher_picture}
+          />
+        </div>
       ))}
     </div>
   )

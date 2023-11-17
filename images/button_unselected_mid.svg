@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 80">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff6a00;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #ff8400;
+      }
+
+      .cls-3 {
+        fill: #ff9e00;
+      }
+
+      .cls-4 {
+        fill: #fff4b9;
+      }
+
+      .cls-5 {
+        fill: #ffb900;
+      }
+    </style>
+  </defs>
+  <path class="cls-5" d="m0,60V5h32v55H0Z"/>
+  <path class="cls-3" d="m0,5V0h32v5H0Z"/>
+  <path class="cls-4" d="m0,65v-5h32v5H0Z"/>
+  <path class="cls-2" d="m0,75v-10h32v10H0Z"/>
+  <path class="cls-1" d="m0,80v-5h32v5H0Z"/>
+</svg>
