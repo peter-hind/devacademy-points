@@ -3,18 +3,46 @@ import { Link } from 'react-router-dom'
 export default function Nav() {
   return (
     <div className="nav">
-      <p>
-        <Link to="/history">History</Link>
-      </p>
-      <p>
-        <Link to="/award">Award</Link>
-      </p>
-      <p>
-        <Link to="/students">Students</Link>
-      </p>
-      <p>
-        <Link to="/teachers">Teachers</Link>
-      </p>
+      <div className='button'>
+        <div className='button-left'></div>
+        <Link to="/history">
+          <div className='button-mid'>
+            History
+          </div>
+        </Link>
+        <div className='button-right'></div>
+      </div>
+
+      <div className='button'>
+          <div className='button-left'></div>
+          <Link to="/award">
+            <div className='button-mid'>
+              Award
+            </div>
+          </Link>
+          <div className='button-right'></div>
+      </div>
+
+      <div className='button'>
+        <div className='button-left'></div>
+          <Link to="/students">
+          <div className='button-mid'>
+          Students
+          </div>
+        </Link>
+        <div className='button-right'></div>
+      </div>
+
+      <div className='button'>
+        <div className='button-left'></div>
+          <Link to="/teachers">
+          <div className='button-mid'>
+          Teachers
+          </div>
+          </Link>
+        <div className='button-right'></div>
+      </div>
+      
     </div>
   )
 }
