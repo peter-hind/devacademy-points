@@ -10,8 +10,13 @@ function Profile({ student_name, student_points }: StudentData) {
     <div className="grid-2a left"></div>
     
     <div className='grid-content'>
-      <h3>{student_name}</h3>
-      <p>Points: {student_points}</p>
+      <div className='grid-flex'>
+        <div className='comment'>
+          <h3>{student_name}</h3>
+          <p>Points: {student_points}</p>
+        </div>
+        <img src={`/images/student-${student_name}.svg`} alt={student_name} className="student"/>
+      </div>
     </div>
 
     <div className="grid-2c right"></div>

@@ -14,10 +14,6 @@ function StudentsPage() {
             student_points={student.student_points}
             student_id={student.student_id}
           />
-          <img
-            src={`/images/student-${student.student_name}.svg`}
-            alt={student.student_name}
-          />
         </div>
       ))}
   </div>
