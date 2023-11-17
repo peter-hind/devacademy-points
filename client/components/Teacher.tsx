@@ -7,11 +7,17 @@ function TeachersPage({ teacher_name, favorite_thing }: TeacherData) {
     <div className="grid-1b top"></div>
     <div className="grid-1c corner"></div>
     <div className="grid-2a left"></div>
-    
+
     <div className='grid-content'>
-    <h3>{teacher_name}</h3>
-      <p>Favorite thing: {favorite_thing}</p>
+      <div className='grid-flex'>
+        <div className='comment'>
+          <h3>{teacher_name}</h3>
+          <p>Favorite thing: {favorite_thing}</p>
+        </div>
+        <img src={`/images/teacher-${teacher_name}.svg`} alt={teacher_name} className="student"/>
+      </div>
     </div>
+
 
     <div className="grid-2c right"></div>
     <div className="grid-3a corner"></div>
