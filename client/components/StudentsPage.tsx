@@ -12,6 +12,7 @@ function StudentsPage() {
           student_name={student.student_name}
           student_points={student.student_points}
           student_id={student.student_id}
+          student_picture={student.student_picture}
         />
       ))}
     </div>
