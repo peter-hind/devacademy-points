@@ -7,13 +7,17 @@ function StudentsPage() {
   return (
     <div>
       {studentData?.map((student) => (
-        <Profile
-          key={student.student_id}
-          student_name={student.student_name}
-          student_points={student.student_points}
-          student_id={student.student_id}
-          student_picture={student.student_picture}
-        />
+        <div key={student.student_id}>
+          <Profile
+            student_name={student.student_name}
+            student_points={student.student_points}
+            student_id={student.student_id}
+          />
+          <img
+            src={`/images/student-${student.student_name}.svg`}
+            alt={student.student_name}
+          />
+        </div>
       ))}
     </div>
   )
