@@ -15,10 +15,6 @@ function TeachersPage() {
             teacher_id={teacher.teacher_id}
             teacher_picture={teacher.teacher_picture}
           />
-          <img
-            src={`/images/teacher-${teacher.teacher_name}.svg`}
-            alt={teacher.teacher_name}
-          />
         </div>
       ))}
     </div>

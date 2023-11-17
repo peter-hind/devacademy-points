@@ -10,11 +10,11 @@ function TeachersPage({ teacher_name, favorite_thing }: TeacherData) {
 
     <div className='grid-content'>
       <div className='grid-flex'>
+        <img src={`/images/teacher-${teacher_name}.svg`} alt={teacher_name} className="student"/>
         <div className='comment'>
           <h3>{teacher_name}</h3>
           <p>Favorite thing: {favorite_thing}</p>
         </div>
-        <img src={`/images/teacher-${teacher_name}.svg`} alt={teacher_name} className="student"/>
       </div>
     </div>
 
