@@ -5,7 +5,8 @@ import Profile from './Profile'
 function StudentsPage() {
   const { data: studentData } = useProfiles()
   return (
-    <div>
+    
+  <div className='profiles'>
       {studentData?.map((student) => (
         <div key={student.student_id}>
           <Profile
@@ -19,7 +20,10 @@ function StudentsPage() {
           />
         </div>
       ))}
-    </div>
+  </div>
+
+
+
   )
 }
 

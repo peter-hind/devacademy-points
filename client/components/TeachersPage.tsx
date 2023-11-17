@@ -6,7 +6,7 @@ import Teacher from './Teacher'
 function TeachersPage() {
   const { data: teacherData } = useTeachers()
   return (
-    <div>
+    <div className='profiles'>
       {teacherData?.map((teacher) => (
         <div key={teacher.teacher_id}>
           <Teacher
