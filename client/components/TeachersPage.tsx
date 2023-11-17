@@ -8,13 +8,18 @@ function TeachersPage() {
   return (
     <div>
       {teacherData?.map((teacher) => (
-        <Teacher
-          key={teacher.teacher_id}
-          teacher_name={teacher.teacher_name}
-          favorite_thing={teacher.favorite_thing}
-          teacher_id={teacher.teacher_id}
-          teacher_picture={teacher.teacher_picture}
-        />
+        <div key={teacher.teacher_id}>
+          <Teacher
+            teacher_name={teacher.teacher_name}
+            favorite_thing={teacher.favorite_thing}
+            teacher_id={teacher.teacher_id}
+            teacher_picture={teacher.teacher_picture}
+          />
+          <img
+            src={`/images/teacher-${teacher.teacher_name}.svg`}
+            alt={teacher.teacher_name}
+          />
+        </div>
       ))}
     </div>
   )
