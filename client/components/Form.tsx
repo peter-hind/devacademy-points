@@ -5,16 +5,48 @@ import { StudentData } from '../../models/profile'
 import { Comment, CommentData } from '../../models/comment'
 import { useProfiles } from '../hooks/useProfiles'
 import { addComment } from '../apis/comments'
+import { useAuth0 } from '@auth0/auth0-react'
+import doesUserContainName from '../../lib'
+import TeachersPage from './TeachersPage'
 
 // interface FormProps {
 //   student: StudentData;
 // }
 
 const Form: React.FC = () => {
+  const { user, isAuthenticated, isLoading } = useAuth0()
   const { data: profileData } = useProfiles()
   const [points, setPoints] = useState<number>(0)
   const [comment, setComment] = useState<string>('')
   const [student, setStudent] = useState<string>('Pete')
+
+  let teacher: string
+  const faciliators = ['Jatin', 'Jen', 'David', 'DaviD', 'Joseph', 'Gerard']
+
+  if (doesUserContainName(user, 'jatin.puri@devacademy.co.nz')) {
+    teacher = 'Jatin'
+  } else if (doesUserContainName(user, 'jennifer.hurley@devacademy.co.nz')) {
+    teacher = 'Jen'
+  } else if (doesUserContainName(user, 'david.kavenga@devacademy.co.nz')) {
+    teacher = 'David'
+  } else if (
+    doesUserContainName(user, 'david.gutierrez.roldan@devacademy.co.nz')
+  ) {
+    teacher = 'DaviD'
+  } else if (doesUserContainName(user, 'joseph.quested@devacademy.co.nz')) {
+    teacher = 'Joseph'
+  } else if (doesUserContainName(user, 'gerard.paapu@devacademy.co.nz')) {
+    teacher = 'Gerard'
+  } else if (doesUserContainName(user, 'david.roldan@devacademy.co.nz')) {
+    teacher = 'DaviD'
+  } else if (
+    doesUserContainName(user, 'david.gutierrez-roldan@devacademy.co.nz')
+  ) {
+    teacher = 'DaviD'
+  }
+  // } else if (doesUserContainName(user, 'peter.hind47@gmail.com')) {
+  //   teacher = 'Joseph'
+  // }
 
   const handlePointsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPoints(Number(e.target.value))
@@ -31,10 +63,15 @@ const Form: React.FC = () => {
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault()
 
+    if (faciliators.includes(teacher) === false) {
+      alert('You are not a faciliator')
+      return
+    }
+
     const newComment: CommentData = {
       comment_content: comment,
       student_name: student,
-      teacher_name: 'Jatin', // Change this
+      teacher_name: teacher,
       points: points,
     }
 
