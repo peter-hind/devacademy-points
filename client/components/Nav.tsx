@@ -8,6 +8,8 @@ export default function Nav() {
   const { user, isAuthenticated } = useAuth0()
   return (
     <div className="nav">
+      <TeacherProfile />
+      {user ? <LogoutButton /> : <LoginButton />}
       <div className="button">
         <div className="button-left"></div>
         <Link to="/history">

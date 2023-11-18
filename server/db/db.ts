@@ -1,6 +1,7 @@
 import db from './connection.ts'
 import { StudentData } from '../../models/profile'
 import { CommentData } from '../../models/comment.ts'
+import knex from 'knex'
 
 export function getStudent(id: number) {
   return db('students').select().where('student_id', id).first()
@@ -39,12 +40,26 @@ export async function addComment(newComment: CommentData) {
     .first()
   console.log(teacherId)
 
+  const currentPoints = await db('students')
+    .where('student_name', newComment.student_name)
+    .select('student_points')
+    .first()
+
+  console.log('points', currentPoints.student_points)
+  console.log('new points', newComment.points)
+
   const addedComment = {
     comment_content: newComment.comment_content,
     student_id: studentId.student_id,
     teacher_id: teacherId.teacher_id,
     points: newComment.points,
   }
+
+  const points = currentPoints.student_points + newComment.points
+  console.log('user', newComment.student_name)
+  await db('students').where('student_name', newComment.student_name).update({
+    student_points: ++newComment.points,
+  })
 
   return db('comments').insert(addedComment)
 }
