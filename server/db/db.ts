@@ -58,7 +58,7 @@ export async function addComment(newComment: CommentData) {
   const points = currentPoints.student_points + newComment.points
   console.log('user', newComment.student_name)
   await db('students').where('student_name', newComment.student_name).update({
-    student_points: ++newComment.points,
+    student_points: points,
   })
 
   return db('comments').insert(addedComment)

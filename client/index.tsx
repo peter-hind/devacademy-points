@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       domain="manaia-2023-pete.au.auth0.com"
       clientId="yUil4b1GTWYPk8upLmX15e37sbgFO7K0"
       authorizationParams={{
-        redirect_uri: 'http://localhost:5173',
+        redirect_uri: window.location.origin,
       }}
     >
       <QueryClientProvider client={queryClient}>
