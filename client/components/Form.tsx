@@ -21,15 +21,7 @@ const Form: React.FC = () => {
   const [student, setStudent] = useState<string>('Pete')
 
   let teacher: string
-  const faciliators = [
-    'Jatin',
-    'Jen',
-    'David',
-    'DaviD',
-    'Joseph',
-    'Gerard',
-    'Pete',
-  ]
+  const faciliators = ['Jatin', 'Jen', 'David', 'DaviD', 'Joseph', 'Gerard']
 
   if (doesUserContainName(user, 'jatin.puri@devacademy.co.nz')) {
     teacher = 'Jatin'
@@ -51,10 +43,7 @@ const Form: React.FC = () => {
     doesUserContainName(user, 'david.gutierrez-roldan@devacademy.co.nz')
   ) {
     teacher = 'DaviD'
-  } else if (doesUserContainName(user, 'peter.hind47@gmail.com')) {
-    teacher = 'Joseph'
   }
-
   const handlePointsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPoints(Number(e.target.value))
   }
