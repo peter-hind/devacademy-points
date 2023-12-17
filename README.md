@@ -7,7 +7,7 @@ The DevAcademy points weren't real. So we made them real!😁
 
 
 
-<img align='right' src="https://repository-images.githubusercontent.com/731943264/c704739b-2021-4850-bb42-098a7abdef70" width="230">
+<img align='right' src="https://repository-images.githubusercontent.com/731946486/f16438a3-b25b-4dc7-ba30-cabe67252358" width="230">
 
 🎮 - Game aesthetic with a nostalgic throwback to the 64bit era
 
@@ -24,34 +24,22 @@ The DevAcademy points weren't real. So we made them real!😁
 
  ![TS Badge](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![Node Badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![Express Badge](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge) ![React Badge](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![React Rout Badge](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![SQlite Badge](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white) ![JWT Badge](https://img.shields.io/badge/json%20web%20tokens-323330?style=for-the-badge&logo=json-web-tokens&logoColor=pink) ![Auth0 Badge](https://img.shields.io/badge/Auth0-EB5424?logo=auth0&logoColor=fff&style=for-the-badge)
 
-## Demo
+## Just for fun
 
-### Check out our live demo and presentation on YouTube!
+### A great 'just because' project!
 
-The ChoreQuest team presented our work to an audience of about 50 people and gave a live demo with some background info about the project.
+This app really added a bit of fun to our lectures. The Mario inspired styling and sprite avatars were really appealing to the developer crowd! ![SuperMarioSuperMarioBrosWonderGIF](https://github.com/peter-hind/devacademy-points/assets/108807475/85f444b3-090d-4742-b6da-0575606242ae)
 
-Check it out below: 👇🏻
-
-
-[![Video](https://img.youtube.com/vi/C__oGHLLBVA/maxresdefault.jpg)](https://www.youtube.com/watch?v=C__oGHLLBVA)
 
 ## The Future
-### Issues and Updates
+### Updates
 
-This project was originally developed under a 5 day time constraint. Believe it or not, it doesn't yet have all the functionality we want! The following updates are in the pipeline:
+This was made pretty quickly for a specific group of people, but I'm going to be making the following updates sometime in the future:
 
-* React Native rebuild for mobile applications
-* Multiple Avatar sets
-* Reward and chore editing
-* Confirmation modals for important choices
-* Shared Family options
-* Chore urgency for points bonus
-* Diminishing returns on regularly completed chores
+* Ability to add new cohorts and switch between cohorts
+* Build an Avatar
+* Add / remove admins!
 
-#### Bugs
-
-We are aware of some issues logging in / signing up on certain browsers, and are working to fix the problems.
-Given the quick nature of the product, some of the codebase is in need of major overhaul/refactoring, which we will undertake as we implement new features.
 
 ## Feedback
 ### Please get in touch with any questions or suggestions!
