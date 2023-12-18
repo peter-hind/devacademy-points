@@ -12,16 +12,20 @@ export default function SingleComment({
     //   <h4>Reason:</h4>
     //   <p>{comment_content}</p>
     // </div>
-    
+
     <div className="grid-container">
       <div className="grid-1a corner"></div>
       <div className="grid-1b top"></div>
       <div className="grid-1c corner"></div>
       <div className="grid-2a left"></div>
-      
+
       <div className="grid-content">
-        <div className='grid-flex'>
-          <img src="/images/teacher-hair-short.svg" alt={teacher_name} className="teacher" />
+        <div className="grid-flex">
+          <img
+            src={`/images/teacher-${teacher_name}.svg`}
+            alt={teacher_name}
+            className="teacher"
+          />
           <div className="comment">
             <h3>
               <span className="bold">{teacher_name}</span>
@@ -35,7 +39,11 @@ export default function SingleComment({
             </h3>
             <p>{comment_content}</p>
           </div>
-          <img src="/images/student-hair-short.svg" alt={student_name} className="student" />
+          <img
+            src={`/images/student-${student_name}.svg`}
+            alt={student_name}
+            className="student"
+          />
         </div>
       </div>
 
@@ -44,6 +52,5 @@ export default function SingleComment({
       <div className="grid-3b bottom"></div>
       <div className="grid-3c corner"></div>
     </div>
-
   )
 }
