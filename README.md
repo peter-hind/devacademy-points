@@ -30,6 +30,13 @@ The DevAcademy points weren't real. So we made them real!😁
 
 This app really added a bit of fun to our lectures. The Mario inspired styling and sprite avatars were really appealing to the developer crowd! ![SuperMarioSuperMarioBrosWonderGIF](https://github.com/peter-hind/devacademy-points/assets/108807475/85f444b3-090d-4742-b6da-0575606242ae)
 
+## Try it out
+
+### Log in as the best teacher of them all - Mario!
+
+Email - mario@luigi.com
+Password - Its_a_me1!
+
 
 ## The Future
 ### Updates
