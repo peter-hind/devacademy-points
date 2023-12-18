@@ -37,6 +37,12 @@ This app really added a bit of fun to our lectures. The Mario inspired styling a
 Email - mario@luigi.com
 Password - Its_a_me1!
 
+Try giving someone (like me!) a few random points! Here are a couple of great reasons you can copy and paste:
+
+* Such a great idea for a whimsical and fun app!
+* I love the litte wee sprites - so adorbs!
+* Pete is the best, his READMEs are so entertaining!
+
 
 ## The Future
 ### Updates
